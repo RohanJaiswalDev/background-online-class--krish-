@@ -16,6 +16,7 @@ header {
     height: auto;
     width: 100%;
     padding: 30px;
+    z-index: 99;
     background-color: #dc143c;
 }
 
@@ -32,6 +33,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    /* To light,bold and bolder */
     font-weight: 700;
 }
 
@@ -61,13 +63,48 @@ nav ul li a {
     text-align: center;
 }
 
-.hero-content{
+.hero-content {
     /* Positioning - absolute : because of header having position fixed. */
     position: absolute;
     top: 40%;
     left: 38%;
 }
 
-.hero h1{
+.hero h1 {
     margin-bottom: 10px;
+}
+
+/*^ Linear gradient */
+
+#color1 {
+    background: linear-gradient(to right, crimson, royalblue, green, yellow);
+    height: 729px;
+}
+
+/*^ linear gradinet with background image */
+
+#bg-image {
+    background: linear-gradient(to right, #ed143d38, #4169e152, #00800040, #ffff0033), url(bg.jpeg) no-repeat center / cover;
+    height: 729px;
+}
+
+/*^ Text with linear gradient or Image */
+
+#unique-text {
+    height: 729px;
+    position: relative;
+    background-color: #ebdada;
+}
+
+.dabba {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.dabba h1 {
+    background-image: linear-gradient(to left, crimson,royalblue,purple);
+    color: transparent;
+    background-clip: text;
+    font-size: 40px;
 }
