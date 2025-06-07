@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    /* Position - Fixed */
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    background-color: #dc143c;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero {
+    height: 729px;
+}
+
+#hero {
+    /** Background Property */
+
+    /* background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    /* Background Shorthand Method */
+    background: url('bg.jpeg') no-repeat center/cover;
+}
+
+.box {
+    border: 2px solid #cdf1e0;
+    padding: 20px;
+    background-color: #2276798c;
+    border-radius: 8px;
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.hero-content{
+    /* Positioning - absolute : because of header having position fixed. */
+    position: absolute;
+    top: 40%;
+    left: 38%;
+}
+
+.hero h1{
+    margin-bottom: 10px;
+}
